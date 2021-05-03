@@ -1,5 +1,9 @@
-# React/Redux/Router Starter Project
+# Introduction to React Hooks
 
-> Provided for the students of the [Bottega Code School](https://bottega.tech/)
+## After completing this workshop, you be able to:
 
-*Fork from [es6-webpack2-starter](https://github.com/micooz/es6-webpack2-starter)*
+- Integrate JavaScript Listeners
+- Utilize the `useState` hook to keep track of component’s state
+- Work with the `useEffect` hook to dynamically update a component’s
+  state
+- Build a custom hook that enables responsive behavior in React
