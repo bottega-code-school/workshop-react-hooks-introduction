@@ -5,7 +5,6 @@ import { LinearGradient } from "@visx/gradient";
 import { pointRadial } from "d3-shape";
 import getLinkComponent from "./utils/getLinkComponent";
 import LinkControls from "./utils/LinkControls";
-import useResponsive from "./hooks/useResponsive";
 
 interface TreeNode {
   name: string;
@@ -71,13 +70,6 @@ const HorizontalTree = ({
   const [orientation, setOrientation] = React.useState<string>("horizontal");
   const [linkType, setLinkType] = React.useState<string>("diagonal");
   const [stepPercent, setStepPercent] = React.useState<number>(0.5);
-  const { screenType } = useResponsive();
-
-  React.useEffect(() => {
-    if (screenType === "MOBILE") {
-      setLayout("polar");
-    }
-  }, [screenType]);
 
   const innerWidth = totalWidth - margin.left - margin.right;
   const innerHeight = totalHeight - margin.top - margin.bottom;
